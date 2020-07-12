@@ -1,0 +1,17 @@
+.social {
+	display: flex;
+}
+
+.social > * {
+	align-self: center;
+	display: flex;
+}
+
+.social > * + * {
+	margin-left: var(--s-4);
+}
+
+.social__logo {
+	align-self: center;
+	height: var(--s-1);
+}

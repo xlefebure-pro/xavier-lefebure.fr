@@ -1,0 +1,23 @@
+.nav__items {
+	align-items: center;
+	display: flex;
+	
+	@include down(900px) {
+		flex-direction: column;
+	}
+}
+
+.nav__items > * {
+	margin: 0 var(--s0);
+
+	@include down(900px) {
+		margin-bottom: var(--s-2);
+		margin-top: var(--s-2);
+	}
+}
+
+.nav__logo {
+	@include down(900px) {
+		display: none;
+	}
+}

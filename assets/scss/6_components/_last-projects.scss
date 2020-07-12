@@ -1,0 +1,13 @@
+.last-projects {
+
+}
+
+.last-projects__title {
+	@extend %container;
+
+	background-color: var(--color-blue);
+	color: white;
+	text-align: center;
+	padding-bottom: var(--s0);
+	padding-top: var(--s0);
+}

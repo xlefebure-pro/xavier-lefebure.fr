@@ -1,0 +1,17 @@
+type: group
+fields:
+  socialName:
+    type: text
+    label: Nom
+  socialLogo:
+    type: files
+    uploads:
+      template: social
+    label: Logo
+    max: 1
+    sortBy: filename
+    layout: cards
+    size: medium
+  socialLink:
+    type: url
+    label: Lien

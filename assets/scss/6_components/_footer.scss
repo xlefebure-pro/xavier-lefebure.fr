@@ -1,0 +1,22 @@
+.footer {
+	@extend %container;
+	
+	background-color: black;
+	color: white;
+	padding-bottom: var(--s0);
+	padding-top: var(--s0);
+}
+
+.footer__menu {
+	display: flex;
+	justify-content: center;
+	font-family: $font-secondary;
+	margin-bottom: var(--s2);
+}
+
+.footer__legal {
+	display: flex;
+	font-size: var(--font-size-2);
+	justify-content: center;
+	margin-top: var(--s2);
+}

@@ -1,0 +1,79 @@
+:root {
+	--space: 6px; // Base multiplier
+	--container-base-width: 1140px; // Container base width
+
+	--container-padding: calc(var(--space) * 3); // Container padding
+	--container-width: calc(var(--container-base-width) - var(--container-padding) * 2); // Container width without padding
+
+
+	--hue-red: 352;
+	--saturation-red: 80%;
+	--lightness-red: 50%;
+	--color-red: hsl(
+		var(--hue-red),
+		var(--saturation-red),
+		var(--lightness-red)
+	);
+	--color-red-dark: hsl(
+		var(--hue-red),
+		var(--saturation-red),
+		calc(var(--lightness-red) - 10%)
+	);
+
+	--hue-blue: 181;
+	--saturation-blue: 100%;
+	--lightness-blue: 43%;
+	--color-blue: hsl(
+		var(--hue-blue),
+		var(--saturation-blue),
+		var(--lightness-blue)
+	);
+
+	--hue-grey-dark: 227;
+	--saturation-grey-dark: 9%;
+	--lightness-grey-dark: 19%;
+	--color-grey-dark: hsl(
+		var(--hue-grey-dark),
+		var(--saturation-grey-dark),
+		var(--lightness-grey-dark)
+	);
+
+
+	--ratio: 1.5;
+	--s0: calc(var(--ratio) * 1rem);
+	@for $i from 1 through 10 {
+		@if ($i == 1) {
+			--s-#{$i}: calc(var(--s0) / 1.5);
+			--s#{$i}: calc(var(--s0) * 1.5);
+		}
+		@else {
+			--s-#{$i}: calc(var(--s0) / #{$i});
+			--s#{$i}: calc(var(--s0) * #{$i});
+		}
+	}
+	
+	
+	--scale: 1.25;
+	--font-size0: 1rem;
+	@for $i from 1 through 7 {
+		@if ($i == 1) {
+			--font-size-#{$i}: calc(var(--font-size#{($i)-1}) / var(--scale));
+		}
+		@else {
+			--font-size-#{$i}: calc(var(--font-size-#{($i)-1}) / var(--scale));
+		}
+
+		--font-size#{$i}: calc(var(--font-size#{($i)-1}) * var(--scale));
+	}
+
+	--ease-standard-curve: cubic-bezier(0.4, 0.0, 0.2, 1);
+	--ease-deceleration-curve: cubic-bezier(0.0, 0.0, 0.2, 1);
+	--ease-acceleration-curve: cubic-bezier(0.4, 0.0, 1, 1);
+	--ease-sharp-curve: cubic-bezier(0.4, 0.0, 0.6, 1);
+}
+
+@media only screen and (max-width: 1140px) {
+	:root {
+		--container-width: calc(100vw - var(--container-padding) * 2);
+	}
+}

@@ -1,0 +1,19 @@
+.indentation {
+	background-color: black;
+	display: inline-block;
+	height: var(--s-3);
+	margin-right: var(--s-4);
+	width: var(--s-1);
+}
+
+.indentation--large {
+	width: var(--s1);
+}
+
+.indentation--blue {
+	background-color: var(--color-blue);
+}
+
+.indentation--red {
+	background-color: var(--color-red);
+}

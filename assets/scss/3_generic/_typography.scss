@@ -1,0 +1,12 @@
+// Variables
+// ==================
+$font-primary: 'Nunito Sans', sans-serif;
+$font-secondary: 'Anton', sans-serif;
+
+// Font face
+// ==================
+@include font-face('Nunito Sans', '../fonts/Nunito_Sans/NunitoSans', 300 400 600 700, null, ttf);
+@include font-face('Anton', '../fonts/Anton/Anton-Regular', 400, null, ttf);
+
+
+// Pour générer les polices : https://transfonter.org/

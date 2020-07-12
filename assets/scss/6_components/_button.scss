@@ -1,0 +1,30 @@
+.button {
+	border-radius: 4px;
+	cursor: pointer;
+	display: inline-block;
+  padding: var(--s-4) var(--s2);
+}
+
+.button--estimate {
+	font-family: $font-secondary;
+	letter-spacing: var(--s-7);
+	text-transform: uppercase;
+}
+
+.button--center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button-red-filled {
+  background-color: var(--color-red);
+  border-color: var(--color-red);
+  color: white;
+
+  &:hover {
+    background-color: var(--color-red-dark);
+    border-color: var(--color-red-dark);
+    color: white !important;
+    transition: background-color .5s var(--ease-standard-curve);
+  }
+}

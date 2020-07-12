@@ -1,0 +1,7 @@
+.logo {
+	height: var(--s5);
+
+	@include down(900px) {
+		height: var(--s3);
+	}
+}

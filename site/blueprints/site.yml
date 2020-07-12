@@ -1,0 +1,27 @@
+title: Site
+
+columns:
+	left:
+		width: 1/2
+		sections:
+			pages:
+				type: pages
+				headline: Pages
+	right:
+		width: 1/2
+		sections:
+			menu:
+				type: fields
+				fields:
+					mainMenu:
+						headline: Menu
+						label: Menu
+						type: pages
+			socialsMenu:
+				type: fields
+				fields:
+					socials:
+						type: structure
+						label: Réseaux sociaux
+						fields:
+							menufields: fields/socialmenu

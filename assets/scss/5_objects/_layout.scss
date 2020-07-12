@@ -1,0 +1,17 @@
+// Container with padding
+// ==================
+%container,
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: calc(50% - var(--container-width) / 2);
+  padding-right: calc(50% - var(--container-width) / 2);
+}
+
+// Container with margin
+// ==================
+%container-margin {
+  margin-left: auto;
+  margin-right: auto;
+  width: var(--container-width);
+}

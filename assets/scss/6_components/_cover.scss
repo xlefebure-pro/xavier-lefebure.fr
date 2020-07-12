@@ -1,0 +1,31 @@
+.cover {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr auto;
+	overflow-wrap: break-word;
+	word-break: break-word;;
+}
+
+.cover__image {
+  display: block;
+	grid-column: 1;
+  grid-row: 1 / span 3;
+  height: calc(100vh - var(--s5) - var(--s-4) - var(--s-2));
+	object-fit: cover;
+	width: 100vw;	
+
+	@include down(900px) {
+		height: calc(100vh - var(--s3) - var(--s-4) - var(--s-2));
+	}
+}
+
+.cover__overlay {
+	@extend %container;
+
+	background: hsla(0, 100%, 0%, .6);
+	color: white;
+	grid-column: 1;
+  grid-row: 2;
+	text-align: center;	
+}
+

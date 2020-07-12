@@ -1,0 +1,5 @@
+title: Couverture de l'accueil
+accept:
+  mime: image/jpeg, image/png
+  minwidth: 1080
+  orientation: landscape

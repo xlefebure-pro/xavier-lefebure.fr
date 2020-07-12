@@ -1,0 +1,38 @@
+.cover-overlay {
+	display: flex;
+	flex-direction: column;
+	font-size: var(--font-size3);
+	justify-content: space-evenly;
+	height: 100%;
+
+	@include down(760px) {
+		font-size: var(--font-size2);
+	}
+	@include down(400px) {
+		font-size: var(--font-size1);
+	}
+}
+
+.cover-overlay__title {
+
+	@include down(760px) {
+		font-size: var(--font-size5);
+		letter-spacing: var(--s-3);
+		line-height: var(--s2);
+	}
+	@include down(400px) {
+		font-size: var(--font-size4);
+		letter-spacing: var(--s-3);
+		line-height: var(--s2);
+	}
+}
+
+.cover-overlay__description > span {
+	display: block;
+}
+.cover-overlay__description span:nth-child(2) {
+	font-size: var(--font-size1);
+	@include down(760px) {
+		font-size: var(--font-size0);
+	}
+}

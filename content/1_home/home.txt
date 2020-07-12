@@ -1,0 +1,11 @@
+Title: Accueil
+
+----
+
+Cover:
+
+- banner.jpg
+
+----
+
+Text: Accueil

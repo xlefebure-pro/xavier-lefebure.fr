@@ -1,0 +1,34 @@
+Title: Portfolio
+
+----
+
+Mainmenu:
+
+- services
+- skills
+- projects
+- home
+- blog
+- contact
+
+----
+
+Socials:
+
+- 
+  socialname: Linkedin
+  sociallogo:
+    - logo_linkedin.svg
+  sociallink: >
+    https://www.linkedin.com/in/xavier-lefebure/
+- 
+  socialname: Malt
+  sociallogo:
+    - logo_malt.svg
+  sociallink: >
+    https://www.malt.fr/profile/xavierlefebure
+- 
+  socialname: GitHub
+  sociallogo:
+    - logo_github.svg
+  sociallink: https://github.com/xlefebure-pro
