@@ -50,7 +50,7 @@
 		</div>
 
 		<div class="footer__legal">
-			&copy; 2020 xavier.lefebure.fr - Mentions Légales
+			&copy; 2020 xavier-lefebure.fr - Mentions Légales
 		</div>
 	</footer>
 

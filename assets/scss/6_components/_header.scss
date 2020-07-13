@@ -6,7 +6,7 @@
 	color: white;
 	display: flex;
 	justify-content: center;
-	padding-top: var(--s-4);
+	padding-top: var(--s0);
 	padding-bottom: var(--s-4);
 
 	@include down(900px) {

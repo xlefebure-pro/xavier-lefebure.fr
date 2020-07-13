@@ -1,6 +1,5 @@
 <header class="header">
 	<div class="header__responsive">
-		<!-- <div class="header__blank"></div> -->
 		<div class="header__logo">
 			<?php snippet('logo') ?>
 		</div>
