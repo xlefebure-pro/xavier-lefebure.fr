@@ -6,7 +6,14 @@
 		<img src="<?= $page->cover()->toFile()->url() ?>" alt="Couverture" class="cover__image">
 		<div class="cover__overlay">
 			<div class="cover-overlay">
-				<h1 class="cover-overlay__title">Développeur Web Freelance</h1>
+				<h1 class="cover-overlay__title">
+					
+					<span
+						class="txt-rotate"
+						data-period="2000"
+						data-rotate='["Développeur Web Freelance"]'>
+					</span>
+				</h1>
 				<p class="cover-overlay__description">
 					<span class="font-weight:bold">Particulier ou Professionnel ?</span>
 					<span>Je vous accompagne et réalise une solution adaptée à vos besoins !</span>

@@ -5,6 +5,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const globImporter = require('node-sass-glob-importer');
 var LiveReloadPlugin = require('webpack-livereload-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 let config = {
 	mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
@@ -32,7 +33,7 @@ let config = {
 						plugins: ['@babel/plugin-proposal-object-rest-spread']
 					}
 				},
-				include: [/fonts/]
+				include: [/fonts/],
 			},
 			{
 				test: /\.s[ac]ss$/i,
@@ -73,7 +74,7 @@ module.exports = config;
 
 if (process.env.NODE_ENV === 'production') {
 	module.exports.plugins.push(
-		new UglifyJsPlugin(),
+		// new UglifyJsPlugin(),
 		new OptimizeCSSAssetsPlugin()
 	);
 }
