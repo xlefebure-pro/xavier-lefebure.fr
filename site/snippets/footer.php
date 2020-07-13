@@ -29,9 +29,9 @@
 			<div>
 				<div class="footer-column__title"><span class="indentation indentation--red"></span>Coordonnées</div>
 				<ul class="footer-column__contact">
-					<li><i class="fas fa-phone-alt"></i>06.98.19.34.82</li>
-					<li><i class="fas fa-at"></i>xavier.lefebure.pro@gmail.com</li>
-					<li><i class="fas fa-map-marker-alt"></i>Montpellier</li>
+					<li><img src="<?= url('images/icons/icon-phone.svg') ?>" alt="Icone téléphone" class="icon">06.98.19.34.82</li>
+					<li><img src="<?= url('images/icons/icon-at.svg') ?>" alt="Icone email" class="icon">xavier.lefebure.pro@gmail.com</li>
+					<li><img src="<?= url('images/icons/icon-location.svg') ?>" alt="Icone localisation" class="icon">Montpellier</li>
 				</ul>
 			</div>
 			<div>

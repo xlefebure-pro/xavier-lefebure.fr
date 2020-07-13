@@ -37,7 +37,5 @@
     "webpack-cli": "^3.3.12",
     "webpack-livereload-plugin": "^2.3.0"
   },
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.13.1"
-  }
+  "dependencies": {}
 }

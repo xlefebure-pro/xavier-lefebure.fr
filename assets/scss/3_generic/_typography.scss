@@ -5,8 +5,8 @@ $font-secondary: 'Anton', sans-serif;
 
 // Font face
 // ==================
-@include font-face('Nunito Sans', '../fonts/Nunito_Sans/NunitoSans', 300 400 600 700, null, ttf);
-@include font-face('Anton', '../fonts/Anton/Anton-Regular', 400, null, ttf);
+@include font-face('Nunito Sans', '../fonts/Nunito_Sans/NunitoSans', 300 400 600 700, null, woff2 woff);
+@include font-face('Anton', '../fonts/Anton/Anton-Regular', 400, null, woff2 woff);
 
 
 // Pour générer les polices : https://transfonter.org/

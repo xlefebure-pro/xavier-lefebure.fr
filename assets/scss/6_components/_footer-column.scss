@@ -27,18 +27,14 @@
 }
 
 .footer-column__contact {
+	column-gap: var(--s-2);
 	display: grid;
 	grid-template-columns: auto 1fr;
-	column-gap: var(--s-2);
+	row-gap: var(--s-1);
 }
 
 .footer-column__contact > li {
 	display: contents;
-}
-
-.footer-column__contact > li::after {
-	content: '';
-	margin-top: var(--s-2);
 }
 
 .footer-column__contact {

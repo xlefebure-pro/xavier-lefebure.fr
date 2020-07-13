@@ -1,5 +1,4 @@
 require("../scss/main.scss");
-require('@fortawesome/fontawesome-free/js/all.js');
 
 (function() {	
 	var burger = document.querySelector(".js-burger");
