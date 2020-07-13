@@ -1,21 +1,33 @@
 title: Home
 
-columns:
-  left:
-    width: 2/3
-  right:
-    width: 1/3
-    sections:
-      cover:
-        type: fields
-        fields:
-          cover:
-            label: Couverture
-            type: files
-            max: 1
-            layout: cards
-            sortBy: filename
-            image:
-							cover: true
-            uploads:
-              template: coverhome
+tabs:
+	content:
+		label: Contenu
+		icon: text
+		columns:
+			left:
+				width: 2/3
+			right:
+				width: 1/3
+				sections:
+					cover:
+						type: fields
+						fields:
+							cover:
+								label: Couverture
+								type: files
+								max: 1
+								layout: cards
+								sortBy: filename
+								image:
+									cover: true
+								uploads:
+									template: coverhome
+	seo:
+		label: SEO
+		icon: search
+		columns:
+			seo:
+				width: 2/3
+				fields:
+					meta: fields/seo

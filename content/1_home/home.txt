@@ -8,4 +8,12 @@ Cover:
 
 ----
 
+Metatitle: Développeur Web Freelance - Symfony | Xavier Lefébure
+
+----
+
+Metadescription: Réalisez votre site internet sur-mesure ! Xavier Lefébure, développeur web freelance à Montpellier et Saint-Gély-du-Fesc.
+
+----
+
 Text: Accueil

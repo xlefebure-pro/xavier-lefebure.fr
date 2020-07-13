@@ -1,6 +1,11 @@
 <?php
 
 return [
-	"debug" => true,
+	"debug" => false,
 	"livereload" => true,
+	'cache' => [
+		'pages' => [
+				'active' => false,
+		]
+	],
 ];

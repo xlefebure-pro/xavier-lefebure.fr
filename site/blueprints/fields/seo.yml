@@ -1,0 +1,12 @@
+type: group
+fields:
+  metaTitle:
+    label: Méta titre
+    type: text
+    maxlength: 60
+    help: Si vide contiendra le titre de la page
+  metaDescription:
+    label: Méta description
+    type: textarea
+    maxlength: 158
+    buttons: false
