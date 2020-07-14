@@ -1,0 +1,23 @@
+title: Projects
+
+tabs:
+	content:
+		label: Contenu
+		icon: text
+		sections:
+			drafts:
+				extends: sections/projects
+				headline: Brouillons
+				status: drafts
+			listed:
+				extends: sections/projects
+				headline: Publiés
+				status: listed
+	seo:
+		label: SEO
+		icon: search
+		columns:
+			seo:
+				width: 2/3
+				fields:
+					meta: fields/seo

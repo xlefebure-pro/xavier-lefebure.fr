@@ -1,13 +1,25 @@
 .last-projects {
-
 }
 
 .last-projects__title {
 	@extend %container;
 
-	background-color: var(--color-blue);
-	color: white;
-	text-align: center;
-	padding-bottom: var(--s0);
-	padding-top: var(--s0);
+	margin-bottom: var(--s2);
+}
+
+.last-projects__items {
+	@extend %container;
+
+	align-items: center;
+	column-gap: var(--s2);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
+	@include down(765px) {
+		display: block;
+	}
+}
+
+.last-projects__items > *:hover {
+	opacity: .9;
 }

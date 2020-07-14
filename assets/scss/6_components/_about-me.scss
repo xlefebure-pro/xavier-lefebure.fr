@@ -1,11 +1,5 @@
 .about-me__title {
 	@extend %container;
-
-	background-color: var(--color-red);
-	color: white;
-	text-align: center;
-	padding-bottom: var(--s0);
-	padding-top: var(--s0);
 }
 
 .about-me__content {	

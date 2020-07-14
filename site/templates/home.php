@@ -24,7 +24,7 @@
 	</div>
 
 	<div class="about-me">
-		<h2 class="about-me__title">Technophile</h2>
+		<h2 class="about-me__title title-banner">Technophile</h2>
 		<div class="about-me__content">
 			<img src="<?= url('images/avatar.svg') ?>" alt="Avatar Xavier Lefébure" class="about-me__avatar">
 			<div class="about-me__identity">
@@ -55,7 +55,14 @@
 	</div>
 
 	<div class="last-projects">
-		<h2 class="last-projects__title">Derniers projets</h2>
+		<h2 class="last-projects__title title-banner title-banner--blue">Derniers projets</h2>
+		<div class="last-projects__items">
+			<?php foreach ($kirby->collection('projects')->limit(3) as $project) : ?>
+				<a href="<?= $project->url() ?>">
+					<?= $project->images()->findBy("template", "cover") ?>
+				</a>
+			<?php endforeach ?>
+		</div>
 	</div>
 </main>
 

@@ -1,1 +1,145 @@
-!function(t){var e={};function n(r){if(e[r])return e[r].exports;var o=e[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=t,n.c=e,n.d=function(t,e,r){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:r})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var o in t)n.d(r,o,function(e){return t[e]}.bind(null,o));return r},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="",n(n.s=0)}([function(t,e,n){"use strict";n.r(e);n(2),n(3),n(4);n(1)},function(t,e,n){},function(t,e){!function(){var t=document.querySelector(".js-burger");if(t){var e=document.querySelector(".js-menu");e&&t.addEventListener("click",(function(){var t="true"!==this.getAttribute("aria-expanded");this.setAttribute("aria-expanded",t),this.classList.toggle("burger--is-active"),e.classList.toggle("header__nav--is-open")}))}}()},function(t,e){document.addEventListener("DOMContentLoaded",(function(){let t=document.getElementsByClassName("js-logo");if(0===t.length||t.length>2)return;let e=1===t.length?t[0]:"none"===window.getComputedStyle(t[0].closest(".header__responsive")).display?t[1]:t[0],n=e.getBoundingClientRect(),r=window.getComputedStyle(e).transformOrigin.split(" ");function o(t){let o=t,i=0,s=0;t.targetTouches&&t.targetTouches[0]?(o=t.targetTouches[0],i=o.pageX,s=o.pageY):(i=t.clientX,s=t.clientY);let a=n.top+parseInt(r[1])-window.pageYOffset,u=n.left+parseInt(r[0])-window.pageXOffset,d=Math.atan2(i-u,s-a)*(180/Math.PI)*-1;e.style.transform="rotate("+d+"deg)"}function i(t){e.style.transform="rotate(0deg)"}window.addEventListener("mousemove",o),window.addEventListener("mouseout",i),window.addEventListener("touchmove",o),window.addEventListener("touchstart",o),window.addEventListener("touchend",i)}))},function(t,e){var n=function(t,e,n){this.toRotate=e,this.el=t,this.loopNum=0,this.period=9999999999,this.txt="",this.tick(),this.isDeleting=!1};n.prototype.tick=function(){var t=this.loopNum%this.toRotate.length,e=this.toRotate[t];this.isDeleting?this.txt=e.substring(0,this.txt.length-1):this.txt=e.substring(0,this.txt.length+1),this.el.innerHTML='<span class="wrap">'+this.txt+"</span>";var n=this,r=100;this.isDeleting&&(r/=2),this.isDeleting||this.txt!==e?this.isDeleting&&""===this.txt&&(this.isDeleting=!1,this.loopNum++,r=500):(r=this.period,this.isDeleting=!0),setTimeout((function(){n.tick()}),r)},window.onload=function(){for(var t=document.getElementsByClassName("txt-rotate"),e=0;e<t.length;e++){var r=t[e].getAttribute("data-rotate"),o=t[e].getAttribute("data-period");r&&new n(t[e],JSON.parse(r),o)}var i=document.createElement("style");i.type="text/css";let s=".txt-rotate > .wrap { border-right: 0.08em solid transparent; animation: animated-cursor 600ms steps(17,end) 4 }";s+="@keyframes animated-cursor{from{border-right-color: #666;} to{border-right-color: transparent;}}",i.innerHTML=".txt-rotate > .wrap { border-right: 0.08em solid transparent; animation: animated-cursor 600ms steps(17,end) 4 }@keyframes animated-cursor{from{border-right-color: #666;} to{border-right-color: transparent;}}",document.body.appendChild(i)}}]);
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./assets/js/burger.js":
+/*!*****************************!*\
+  !*** ./assets/js/burger.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("(function() {\t\r\n\tvar burger = document.querySelector(\".js-burger\");\r\n\tif (!burger) {\r\n\t\treturn;\r\n\t}\r\n\r\n\tvar menu = document.querySelector(\".js-menu\");\r\n\tif (!menu) {\r\n\t\treturn;\r\n\t}\r\n\r\n\tburger.addEventListener(\"click\", function() {\r\n\t\tvar ariaExpandedState = this.getAttribute(\"aria-expanded\") === \"true\" ? false : true;\r\n\t\tthis.setAttribute(\"aria-expanded\", ariaExpandedState);\r\n\t\tthis.classList.toggle(\"burger--is-active\");\r\n\t\tmenu.classList.toggle(\"header__nav--is-open\");\r\n\t});\r\n\t\r\n})();\n\n//# sourceURL=webpack:///./assets/js/burger.js?");
+
+/***/ }),
+
+/***/ "./assets/js/effect_logo.js":
+/*!**********************************!*\
+  !*** ./assets/js/effect_logo.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("document.addEventListener(\"DOMContentLoaded\", function() {\r\n\tlet logos = document.getElementsByClassName(\"js-logo\");\r\n\tif (logos.length === 0 || logos.length > 2) return;\r\n\r\n\tlet logo = logos.length === 1\r\n\t\t? logos[0]\r\n\t\t: (\r\n\t\t\t\twindow.getComputedStyle(logos[0].closest(\".header__responsive\")).display === 'none'\r\n\t\t\t\t? logos[1]\r\n\t\t\t\t: logos[0]\r\n\t\t\t);\r\n\r\n\tlet logoBox = logo.getBoundingClientRect();\r\n\tlet centerPoint = window.getComputedStyle(logo).transformOrigin;\r\n\tlet centers = centerPoint.split(\" \");\r\n\r\n\r\n\tfunction rotateLogo(e) {\r\n\t\tlet logoEvent = e;\r\n\t\tlet mouseX = 0;\r\n\t\tlet mouseY = 0;\r\n\r\n\t\tif (e.targetTouches && e.targetTouches[0]) {\r\n\t\t\t\t\t// e.preventDefault(); \r\n\t\t\t\t\tlogoEvent = e.targetTouches[0];\r\n\t\t\t\t\tmouseX = logoEvent.pageX;\r\n\t\t\t\t\tmouseY = logoEvent.pageY;\r\n\t\t} else {\r\n\t\t\t\t\tmouseX = e.clientX,\r\n\t\t\t\t\tmouseY = e.clientY;\r\n\t\t}\r\n\r\n\t\tlet centerY = logoBox.top + parseInt(centers[1]) - window.pageYOffset;\r\n\t\tlet centerX = logoBox.left + parseInt(centers[0]) - window.pageXOffset;\r\n\t\tlet radians = Math.atan2(mouseX - centerX, mouseY - centerY);\r\n\t\tlet degrees = (radians * (180 / Math.PI) * -1);\r\n\t\tlogo.style.transform = 'rotate('+degrees+'deg)';\r\n\t}\r\n\r\n\tfunction resetRotateLogo(e) {\r\n\t\tlogo.style.transform = 'rotate(0deg)';\r\n\t}\r\n\r\n\twindow.addEventListener('mousemove', rotateLogo);\r\n\twindow.addEventListener('mouseout', resetRotateLogo);\r\n\twindow.addEventListener('touchmove', rotateLogo);\r\n\twindow.addEventListener('touchstart', rotateLogo);\r\n\twindow.addEventListener('touchend', resetRotateLogo);\r\n});\n\n//# sourceURL=webpack:///./assets/js/effect_logo.js?");
+
+/***/ }),
+
+/***/ "./assets/js/effect_typing.js":
+/*!************************************!*\
+  !*** ./assets/js/effect_typing.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var TxtRotate = function(el, toRotate, period) {\r\n\tthis.toRotate = toRotate;\r\n  this.el = el;\r\n  this.loopNum = 0;\r\n  // this.period = parseInt(period, 10) || 2000;\r\n  this.period = 9999999999; // Stop\r\n  this.txt = '';\r\n  this.tick();\r\n  this.isDeleting = false;\r\n};\r\n\r\nTxtRotate.prototype.tick = function() {\r\n  var i = this.loopNum % this.toRotate.length;\r\n  var fullTxt = this.toRotate[i];\r\n\r\n  if (this.isDeleting) {\r\n    this.txt = fullTxt.substring(0, this.txt.length - 1);\r\n  } else {\r\n    this.txt = fullTxt.substring(0, this.txt.length + 1);\r\n  }\r\n\r\n  this.el.innerHTML = '<span class=\"wrap\">'+this.txt+'</span>';\r\n\r\n  var that = this;\r\n\t// var delta = 300 - Math.random() * 100;\r\n\tvar delta = 100;\r\n\r\n  if (this.isDeleting) { delta /= 2; }\r\n\r\n  if (!this.isDeleting && this.txt === fullTxt) {\r\n    delta = this.period;\r\n    this.isDeleting = true;\r\n  } else if (this.isDeleting && this.txt === '') {\r\n    this.isDeleting = false;\r\n    this.loopNum++;\r\n    delta = 500;\r\n  }\r\n\r\n  setTimeout(function() {\r\n    that.tick();\r\n  }, delta);\r\n};\r\n\r\nwindow.onload = function() {\r\n  var elements = document.getElementsByClassName('txt-rotate');\r\n  for (var i=0; i<elements.length; i++) {\r\n    var toRotate = elements[i].getAttribute('data-rotate');\r\n    var period = elements[i].getAttribute('data-period');\r\n    if (toRotate) {\r\n      new TxtRotate(elements[i], JSON.parse(toRotate), period);\r\n    }\r\n  }\r\n  // INJECT CSS\r\n  var css = document.createElement(\"style\");\r\n  css.type = \"text/css\";\r\n  let cssText = \".txt-rotate > .wrap { border-right: 0.08em solid transparent; animation: animated-cursor 600ms steps(17,end) 4 }\";\r\n  cssText += \"@keyframes animated-cursor{from{border-right-color: #666;} to{border-right-color: transparent;}}\";\r\n  css.innerHTML = cssText;\r\n  document.body.appendChild(css);\r\n};\n\n//# sourceURL=webpack:///./assets/js/effect_typing.js?");
+
+/***/ }),
+
+/***/ "./assets/js/main.js":
+/*!***************************!*\
+  !*** ./assets/js/main.js ***!
+  \***************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _burger_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./burger.js */ \"./assets/js/burger.js\");\n/* harmony import */ var _burger_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_burger_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _effect_logo_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./effect_logo.js */ \"./assets/js/effect_logo.js\");\n/* harmony import */ var _effect_logo_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_effect_logo_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _effect_typing_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./effect_typing.js */ \"./assets/js/effect_typing.js\");\n/* harmony import */ var _effect_typing_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_effect_typing_js__WEBPACK_IMPORTED_MODULE_2__);\n__webpack_require__(/*! ../scss/main.scss */ \"./assets/scss/main.scss\");\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./assets/js/main.js?");
+
+/***/ }),
+
+/***/ "./assets/scss/main.scss":
+/*!*******************************!*\
+  !*** ./assets/scss/main.scss ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./assets/scss/main.scss?");
+
+/***/ })
+
+/******/ });

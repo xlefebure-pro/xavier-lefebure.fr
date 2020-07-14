@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		let centerY = logoBox.top + parseInt(centers[1]) - window.pageYOffset;
 		let centerX = logoBox.left + parseInt(centers[0]) - window.pageXOffset;
 		let radians = Math.atan2(mouseX - centerX, mouseY - centerY);
-		let degrees = (radians * (180 / Math.PI) * -1); 
+		let degrees = (radians * (180 / Math.PI) * -1);
 		logo.style.transform = 'rotate('+degrees+'deg)';
 	}
 

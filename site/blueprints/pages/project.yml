@@ -1,0 +1,35 @@
+title: Project
+preset: page
+
+status:
+	draft: Brouillon
+	listed: Publié
+
+fields:
+	tags:
+		type: tags
+		width: 3/4
+	date:
+		label: Date
+		type: date
+		default: now
+		required: true
+		width: 1/4
+	description:
+		label: Description 
+		type: textarea
+		size: large
+
+sidebar:
+	cover:
+		type: files
+		headline: Couverture
+		layout: cards
+		info: "{{ file.dimensions }}"
+		template: cover
+		min: 1
+		max: 1
+	gallery:
+		type: files
+		headline: Gallerie
+		template: image
