@@ -36,6 +36,11 @@ Icon
 /site/sessions/*
 !/site/sessions/index.html
 
+# Config
+# ---------------
+/site/config/*
+!/site/config/config.php
+
 # License
 # ---------------
 /site/config/.license

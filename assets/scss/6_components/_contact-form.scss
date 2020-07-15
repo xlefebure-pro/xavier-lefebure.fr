@@ -1,0 +1,150 @@
+.contact-form {
+	@extend %container;
+
+	column-gap: var(--s4);
+	display: grid;
+	grid-template-columns: 1fr auto auto 1fr;
+	grid-template-rows: repeat(6, auto);
+	margin-top: var(--s0);
+	row-gap: var(--s0);
+
+	@include down (890px) {
+		grid-template-columns: 1fr 6fr 1fr;
+	}
+}
+
+.contact-form fieldset {
+	display: contents;
+}
+
+.contact-form__label {
+	column-gap: var(--s-2);
+	display: grid;
+	font-weight: bold;
+	grid-template-columns: auto 1fr;
+
+	@include down (600px) {
+		display: block;
+	}
+}
+
+.contact-form__label span {
+	align-self: center;
+}
+
+.contact-form__label.contact-form__message {
+	display: block;
+	margin-top: var(--s2);
+}
+
+.contact-form__textarea {
+	display: block;
+	margin-bottom: var(--s0);
+	margin-top: var(--s0);
+	width: 100%;
+}
+
+.contact-form__input {
+	border: none;
+	border-bottom: 1px solid #979797;
+	width: 100%;
+}
+
+.contact-form__lastname {
+	grid-column: 2;
+	grid-row: 2;
+}
+
+.contact-form__firstname {
+	grid-column: 2;
+	grid-row: 3;
+}
+
+.contact-form__phone {
+	grid-column: 3;
+	grid-row: 2;
+	
+	@include down (890px) {
+		grid-column: 2;
+		grid-row: 4;
+	}
+}
+
+.contact-form__email {
+	grid-column: 3;
+	grid-row: 3;
+	
+	@include down (890px) {
+		grid-column: 2;
+		grid-row: 5;
+	}
+}
+
+.contact-form__subject {
+	grid-column: 2 / span 2;
+	grid-row: 4;
+	
+	@include down (890px) {
+		grid-column: 2;
+		grid-row: 6;
+	}
+}
+
+.contact-form__message {
+	grid-column: 2 / span 2;
+	grid-row: 5;
+	
+	@include down (890px) {
+		grid-column: 2;
+		grid-row: 7;
+	}
+}
+
+.contact-form__submit {
+	display: inline-block;
+	font-family: $font-secondary;
+	font-size: var(--font-size1);
+	grid-column: 2 / span 2;
+	grid-row: 6;
+	margin: auto;
+	text-transform: uppercase;
+	
+	@include down (890px) {
+		grid-column: 2;
+		grid-row: 8;
+	}
+}
+
+.contact-form__hidden-visually {
+	border: 0 !important;
+	display: contents;
+	clip: rect(0 0 0 0) !important;
+	clip-path: inset(50%) !important;
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	white-space: nowrap !important;
+	width: 1px !important;
+}
+
+.contact-form__alert {
+	border: 1px solid transparent;
+	border-radius: 6px;
+	grid-column: 2 / span 2;
+	grid-row: 1;
+	padding: var(--s-3) var(--s0);
+}
+
+.contact-form__alert--danger {
+	background-color: #f8d7da;
+	border-color: #f5c6cb;
+	color: #721c24;
+}
+
+.contact-form__alert--success {
+	background-color: #d4edda;
+	border-color: #c3e6cb;
+	color: #155724;
+}

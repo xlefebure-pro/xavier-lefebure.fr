@@ -6,5 +6,6 @@ return [
 				'active' => true,
 		]
 	],
+	'email' => require_once 'email.php'
 ];
 

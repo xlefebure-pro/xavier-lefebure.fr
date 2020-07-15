@@ -1,0 +1,12 @@
+.contact__catch {
+	@extend %container;
+
+	font-family: $font-primary;
+	font-size: var(--font-size2);
+	font-weight: bold;
+	letter-spacing: normal;
+	line-height: var(--s1);
+	margin-bottom: var(--s2);
+	text-align: center;
+	text-transform: none;
+}
