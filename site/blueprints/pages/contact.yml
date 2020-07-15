@@ -1,0 +1,23 @@
+title: Contact
+tabs:
+	content:
+		label: Contenu
+		icon: text
+		columns:
+			left:
+				width: 2/3
+				sections:
+					cacth:
+						type: fields
+						fields:
+							cacth:
+								label: Phrase d'accroche
+								type: textarea
+	seo:
+		label: Référencement
+		icon: search
+		columns:
+			seo:
+				width: 2/3
+				fields:
+					meta: fields/seo

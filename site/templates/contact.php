@@ -7,8 +7,8 @@
 			Contact
 		</h1>
 
-		<h2 class="contact__catch">
-			Un renseignement ?<br>Une question ?
+		<h2 class="contact__catch">			
+			<?= $page->catch()->kt() ?>
 		</h2>
 
 		<form method="post" class="contact-form">
