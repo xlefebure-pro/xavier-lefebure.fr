@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="fr">
 <head>
+  <?php snippet('analytics') ?>
   <meta charset="utf-8">
   <?php
     snippet('meta');

@@ -1,5 +1,7 @@
 .projects__items {	
 	@extend %container;
+	
+	margin-bottom: var(--s2);
 }
 
 .projects__items > * + * {

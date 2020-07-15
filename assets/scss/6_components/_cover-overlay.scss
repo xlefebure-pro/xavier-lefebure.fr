@@ -14,6 +14,8 @@
 }
 
 .cover-overlay__title {
+	// animation: toto 3s;
+	// z-index: 51;
 
 	@include down(760px) {
 		font-size: var(--font-size5);
@@ -36,3 +38,22 @@
 		font-size: var(--font-size0);
 	}
 }
+
+// @keyframes toto {
+//   0% {
+// 		position: fixed;
+// 		top: 50%;
+//   }
+//   90% {
+// 		position: fixed;
+// 		opacity: 1;
+//   }
+//   95% {
+// 		position: fixed;
+// 		opacity: 0;
+//   }
+//   100% {
+// 		position: inherit;
+// 		opacity: 0;
+//   }
+// }

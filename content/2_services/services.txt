@@ -39,7 +39,7 @@ Services:
   secondary: 'true'
   icon:
     - icon-school.svg
-  description: "Formation à l'utilisation de votre site internet ou à des outils annexes pour gagner en autonomie. Je dispense également de cours dans le développement web pour du PHP / Symfony, CMS Kirby et HTML / CSS."
+  description: "Formation à l'utilisation de votre site internet ou à des outils annexes pour gagner en autonomie. Je dispense également des cours dans le développement web pour du PHP / Symfony, CMS Kirby et HTML / CSS."
 - 
   name: Accompagnement
   secondary: 'true'

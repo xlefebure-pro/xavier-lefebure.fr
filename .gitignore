@@ -49,3 +49,4 @@ Icon
 # ---------------
 /node_modules
 /vendor
+/site/snippets/analytics.php

@@ -6,8 +6,7 @@
 		<img src="<?= $page->cover()->toFile()->url() ?>" alt="Couverture" class="cover__image">
 		<div class="cover__overlay">
 			<div class="cover-overlay">
-				<h1 class="cover-overlay__title">
-					
+				<h1 class="cover-overlay__title">					
 					<span
 						class="txt-rotate"
 						data-period="2000"
@@ -18,7 +17,7 @@
 					<span class="font-weight:bold">Particulier ou Professionnel ?</span>
 					<span>Je vous accompagne et réalise une solution adaptée à vos besoins !</span>
 				</p>
-				<a href="" class="cover-overlay__btn button button--estimate button--center button-red-filled">Devis gratuit</a>
+				<a href="<?= url('contact') ?>" class="cover-overlay__btn button button--estimate button--center button-red-filled">Devis gratuit</a>
 			</div>
 		</div>
 	</div>

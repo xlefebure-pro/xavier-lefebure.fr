@@ -1,4 +1,8 @@
 .service-item {
+	@extend %container;
+}
+
+.service-item__wrapper {	
 	align-items: center;
 	column-gap: var(--s4);
 	display: grid;

@@ -5,10 +5,12 @@
 	display: grid;
 	grid-template-columns: 1fr auto auto 1fr;
 	grid-template-rows: repeat(6, auto);
+	margin-bottom: var(--s2);
 	margin-top: var(--s0);
 	row-gap: var(--s0);
 
 	@include down (890px) {
+		column-gap: var(--s-10);
 		grid-template-columns: 1fr 6fr 1fr;
 	}
 }

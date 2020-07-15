@@ -23,7 +23,7 @@
 
 .footer-column__title {
 	font-weight: bold;
-	margin-bottom: var(--s-1);
+	margin-bottom: var(--s0);
 }
 
 .footer-column__contact {
@@ -35,8 +35,4 @@
 
 .footer-column__contact > li {
 	display: contents;
-}
-
-.footer-column__contact {
-	margin-top: var(--s0);
 }
