@@ -1,0 +1,60 @@
+Title: Services
+
+----
+
+Services:
+
+- 
+  name: Développement web
+  secondary: 'false'
+  icon:
+    - icon-code.svg
+  description: "Création de site internet sur-mesure, responsive et respectant les standards du web. Site vitrine ou encore site e-commerce, j'utilise en fonction du besoin le framework Symfony de PHP ou le CMS Kirby couplé au framework React.js de Javascript ou de l'HTML et du CSS uniquement."
+- 
+  name: Intégration web
+  secondary: 'false'
+  icon:
+    - icon-integration.svg
+  description: >
+    Intégration de maquette ou de template
+    en HTML, CSS et Javascript tout en
+    respectant votre demande. Je respecte
+    les standards du web et utilise une
+    architecture évolutive et maintenable
+    (ITCSS).
+- 
+  name: Maintenance
+  secondary: 'false'
+  icon:
+    - icon-maintain.svg
+  description: "Maintenance de votre site internet, je m'occupe de l'hébergement de votre site internet, des demandes d'évolutions ou de mises à jour."
+- 
+  name: Refonte
+  secondary: 'false'
+  icon:
+    - icon-recast.svg
+  description: "Refonte de votre site internet pour repartir sur de nouvelles bases ? Je développe avec des technologies récentes et m'occupe de la transition entre l'ancienne et la nouvelle version de votre site internet sans perte de données !"
+- 
+  name: Formation
+  secondary: 'true'
+  icon:
+    - icon-school.svg
+  description: "Formation à l'utilisation de votre site internet ou à des outils annexes pour gagner en autonomie. Je dispense également de cours dans le développement web pour du PHP / Symfony, CMS Kirby et HTML / CSS."
+- 
+  name: Accompagnement
+  secondary: 'true'
+  icon:
+    - icon-handshake.svg
+  description: "Accompagnement tout au long de votre projet. Je m'adapte à vos besoins, assure une communication régulière, réponds à vos questions et vous forme à l'utilisation de votre site internet."
+
+----
+
+Metatitle: Services | Xavier Lefébure
+
+----
+
+Metadescription: Développement, intégration et maintenance de site internet. Développeur web à Montpellier, je également réalise des formations et un accompagnement dédiés.
+
+----
+
+Text: 

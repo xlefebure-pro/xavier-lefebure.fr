@@ -2,4 +2,12 @@ Title: Projets
 
 ----
 
+Metatitle: Projets | Xavier Lefébure
+
+----
+
+Metadescription: Renseignez-vous sur mes différents projets. Développeur web à Montpellier, je réalise votre site internet en fonction de vos besoins !
+
+----
+
 Text: 

@@ -208,7 +208,7 @@ h2 {
   line-height: var(--s3);
   text-transform: uppercase; }
 
-.about-me__title, .about-me__content, .contact-form, .contact__catch, .cover__overlay, .footer, .header, .last-projects__title, .last-projects__items, .projects__items,
+.about-me__title, .about-me__content, .contact-form, .contact__catch, .cover__overlay, .footer, .header, .last-projects__title, .last-projects__items, .projects__items, .services__items,
 .container {
   box-sizing: border-box;
   width: 100%;
@@ -718,6 +718,79 @@ h2 {
 .projects__items > * + * {
   margin-top: var(--s2); }
 
+.service-item {
+  align-items: center;
+  -moz-column-gap: var(--s4);
+       column-gap: var(--s4);
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 1fr; }
+  @media (max-width: 765px) {
+    .service-item {
+      display: block; } }
+
+.service-item--bc-blue {
+  background-color: var(--color-blue);
+  color: white;
+  padding-bottom: var(--s2) !important;
+  padding-top: var(--s2) !important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important; }
+
+.service-item__icon img {
+  height: var(--s6); }
+  @media (max-width: 765px) {
+    .service-item__icon img {
+      display: block;
+      margin: auto; } }
+
+.service-item:nth-child(2n) .service-item__icon {
+  grid-column: 3;
+  grid-row: 1; }
+
+.service-item:nth-child(2n+1) .service-item__icon {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end; }
+
+.service-item:nth-child(2n) .service-item__info {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end; }
+
+.service-item:nth-child(2n+1) .service-item__info {
+  grid-column: 3;
+  grid-row: 1; }
+
+.service-item__info {
+  text-align: center; }
+
+.service-item__name {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: var(--font-size2);
+  font-weight: bold;
+  line-height: var(--s2);
+  letter-spacing: normal;
+  text-transform: capitalize; }
+
+.service-item__description {
+  margin-top: var(--s0);
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  text-align: justify; }
+  @media (max-width: 765px) {
+    .service-item__description {
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%; } }
+
+.services__items > * {
+  padding: var(--s0) 0; }
+
+.services__items > * + * {
+  margin-bottom: var(--s1);
+  margin-top: var(--s1); }
+
 .social {
   display: flex; }
 
@@ -747,6 +820,9 @@ h2 {
 
 .indentation--red {
   background-color: var(--color-red); }
+
+.width\:75\% {
+  width: 75%; }
 
 .font-weight\:bold {
   font-weight: bold; }

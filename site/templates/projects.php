@@ -4,7 +4,7 @@
 <main>
 	<div class="projects">
 		<h1 class="projects__title title-banner">
-			Projets
+			<?= $page->title() ?>
 		</h1>
 		<div class="projects__items">
 			<?php foreach ($kirby->collection('projects') as $project) : ?>

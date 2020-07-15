@@ -2,19 +2,22 @@ Title: Contact
 
 ----
 
-Catch:
+Cacth:
 
 Un renseignement ?
 Une question ?
 
 ----
 
-Metatitle: 
+Metatitle: Contact | Xavier Lefébure
 
 ----
 
-Metadescription: 
+Metadescription: Contactez-moi pour tous renseignements ou questions à propos du développement de votre site internet.
 
 ----
 
-Text: 
+Catch:
+
+Un renseignement ?
+Une question ?

@@ -4,7 +4,7 @@
 <main>
 	<div class="contact">
 		<h1 class="contact__title title-banner">
-			Contact
+			<?= $page->title() ?>
 		</h1>
 
 		<h2 class="contact__catch">			
