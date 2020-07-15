@@ -8,7 +8,7 @@
 		</h1>
 
 		<h2 class="contact__catch">
-			Besoin de renseignements ? Une question ?<br>Contactez moi ! Je vous répondrai dans les meilleurs délais.
+			Un renseignement ?<br>Une question ?
 		</h2>
 
 		<form method="post" class="contact-form">
